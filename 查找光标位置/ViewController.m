@@ -31,46 +31,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - private method
-//
-//- (CGSize)boundingRectWithSize:(CGSize)size
-//{
-//    NSDictionary *attribute = @{NSFontAttributeName: self.textField.font};
-//    
-//    CGSize retSize = [self.textField.text boundingRectWithSize:size
-//                                             options:\
-//                      NSStringDrawingTruncatesLastVisibleLine |
-//                      NSStringDrawingUsesLineFragmentOrigin |
-//                      NSStringDrawingUsesFontLeading
-//                                          attributes:attribute
-//                                             context:nil].size;
-//    
-//    return retSize;
-//}
-//
-//- (CGFloat)cursorOffset
-//{
-//    NSArray *textrect = [self.textField selectionRectsForRange:[self.textField selectedTextRange]];
-//    CGRect rect = ((UITextSelectionRect *)textrect[0]).rect;
-//    
-//    if (rect.origin.x > 100000) {
-//        
-//        //计算文字大小
-//        CGSize size = [self boundingRectWithSize:CGSizeMake(0, CGRectGetHeight(self.textField.frame))];
-//
-//        if (self.textField.textAlignment == NSTextAlignmentCenter){
-//            CGSize size = [self boundingRectWithSize:CGSizeMake(0, CGRectGetHeight(self.textField.frame))];
-//            CGFloat width = CGRectGetWidth(self.textField.frame);
-//            return width - (width - size.width)/2.0f;
-//        } else if (self.textField.textAlignment == NSTextAlignmentRight){
-//            return CGRectGetWidth(self.textField.frame);
-//        } else {
-//            return size.width;
-//        }
-//    }
-//    
-//    return rect.origin.x;
-//}
 
 #pragma mark - click
 
